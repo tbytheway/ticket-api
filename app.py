@@ -9,6 +9,7 @@ import os
 
 app = Flask(__name__)
 cors = CORS(app)
+heroku = Heroku(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
 env = Env()
